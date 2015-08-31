@@ -4,10 +4,10 @@ public class Tester implements Runnable{
 	String[] instruction;
 	MazeRunner runner;
 	int speed =250;
-	public Tester(Maze maze,String[] instruction) {
+	public Tester(Maze maze,String[] instruction,int x,int y) {
 		this.maze = maze;
 		this.instruction=instruction;
-		this.runner=new MazeRunner(maze, instruction);
+		this.runner=new MazeRunner(maze, instruction, x, y);
 	}
 	public void setSpeed(int speed){
 		this.speed=speed;

@@ -11,10 +11,12 @@ public class MazeRunner extends Observable implements Runnable {
 	int y = 1;
 	boolean finish = false;
 	boolean wrong = false;
-	public MazeRunner(Maze maze, String[] instruction) {
+	public MazeRunner(Maze maze, String[] instruction,int x,int y) {
 		this.maze = maze;
 		this.mazeMap = maze.getMaze();
 		this.instruction = instruction;
+		this.x = x;
+		this.y = y;
 		addObserver(new MazeRunnerObserver());
 		addObserver(new MazeRunnerObserverHistory());
 	}

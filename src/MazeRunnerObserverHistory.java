@@ -63,7 +63,7 @@ public class MazeRunnerObserverHistory extends JFrame implements Observer,Runnab
 				finishLabel.setText("Fnish");
 				finishLabel.setFont(new Font("helvetica",0,32));
 				finishLabel.setHorizontalAlignment(0);
-				this.topLabel.add(finishLabel,0);
+				this.topLabel.add(finishLabel);
 			}
 			else if(m.isWrong()){
 				JLabel WorngLabel = new JLabel();

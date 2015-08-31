@@ -8,7 +8,7 @@ public class Maze extends Observable {
 		maze = new MazeElement[input.length][input[0].length];
 		for(int i=0;i<input.length;i++)
 			for(int j =0;j<input[0].length;j++){
-				if(input[i][j].equals("#")){
+				if(input[i][j].equals("*")||input[i][j].equals("#")){
 					maze[i][j]= new Wall();
 				}
 				else if(input[i][j].equals("s")){
